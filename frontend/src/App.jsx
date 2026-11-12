@@ -749,21 +749,24 @@ async function handleGrievanceSubmit(e) {
                 </select>
 
                 <label>Category</label>
-                <select
-                    value={grievanceData.category}
-                    onChange={(e) => setGrievanceData({
-                        ...grievanceData,
-                        category: e.target.value
-                    })}
-                    required
-                >
-                    <option value="">Select Category</option>
-                    {["Health", "Education", "PWD", "Water", "Electricity", "Other"].map((category) => (
-                        <option key={category} value={category}>
-                            {category}
-                        </option>
-                    ))}
-                </select>
+                
+<select
+    value={grievanceData.category}
+    onChange={(e) => setGrievanceData({
+        ...grievanceData,
+        category: e.target.value
+    })}
+    required
+>
+    <option value="">Select Category</option>
+    <option value="HEALTH">Health</option>
+    <option value="EDUCATION">Education</option>
+    <option value="PWD">Public Works</option>
+    <option value="WATER">Water Supply</option>
+    <option value="ELECTRICITY">Electricity</option>
+    <option value="OTHER">Other</option>
+</select>
+
 
                 <label>Subject</label>
                 <input
