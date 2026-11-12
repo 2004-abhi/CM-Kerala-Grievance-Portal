@@ -1,5 +1,5 @@
 
-const API_BASE_URL = "http://127.0.0.1:8000/api";
+const API_BASE_URL = "https://cm-kerala-grievance-portal-nc9q.onrender.com/api";
 
 // Common function for sending API requests
 async function apiRequest(endpoint, options = {}) {
